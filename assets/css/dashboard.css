@@ -1,0 +1,162 @@
+body {
+    background-color: #c2c3c438;
+}
+
+
+
+.sidebar {
+    background-color: #000;
+}
+
+
+
+.page_all {
+    background-color: #c2c3c438;
+    margin-top: 100px;
+}
+
+.dashboard_grid {
+    background-color: #fff;
+    padding: 0 5%;
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    position: static;
+    top: 0;
+    width: 100%;
+    position: fixed;
+   
+  top: 0;
+}
+
+.logout a {
+    height: 60px;
+    width: 60px;
+    background-color: #c2c3c438;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FF6384;
+    color: #fff;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 30px;
+    padding: 0 5%;
+    padding-block: 50px;
+}
+
+.chart {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 0 2%;
+    padding-block: 20px;
+}
+
+.chart h4 {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid;
+    width: 100% !important;
+    object-fit: contain;
+    height: 500px !important;
+    margin-top: 20px;
+}
+
+.greeting {
+    
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.heading{
+    margin-top: 150px;
+}
+.mySwiper2, .mySwiper3, .mySwiper4, .mySwiper5{
+    padding: 0 5%;
+    margin-top: 50px;
+}
+.c_box{
+    padding: 0 2%;
+    padding-block: 50px;
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    position: relative;
+}
+
+.c_box h3{
+    width: 100%;
+}
+
+.c_box h1{
+
+width: 100%;}
+
+.c_box i{
+    font-size: 45px;
+    position: absolute;
+    right: 20px;
+}
+
+.customer1{
+    background-color: #FF6384;
+    color: #fff;
+}
+
+.customer2{
+    background-color: #157AFF;
+color: #fff;
+}
+
+.customer3{
+ 
+    background-color: rgb(255, 205, 86);}
+
+    .customer4{
+        background-color: #c2c3c438;
+    }
+
+    .greeting {
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #clock {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 20px;
+       
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+
+    
+
+    @media only screen and (max-width: 1110px) {
+        .greeting{
+            display: flex;
+            flex-direction: column;
+        }
+        #clock{
+            margin-top: 15px;
+        }
+    }

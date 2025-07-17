@@ -1,0 +1,98 @@
+.all{
+    margin-top: 150px;
+    padding: 0 5%;
+    margin-bottom: 150px;
+}
+
+.title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.forms input{
+    height: 50px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.forms select{
+    height: 50px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.forms button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: #157AFF;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.forms input:focus {
+    outline: none;
+}
+.forms select:focus{
+    outline: none; 
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+td{
+    background-color: #fff;
+}
+
+th {
+    background-color: #157AFF;
+    color: #fff;
+}
+
+.total{
+color: #fff;
+    background-color: #FF6384;
+
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.no-products {
+    display: none;
+    text-align: center;
+    color: red;
+    margin-top: 20px;
+}
+
+.search input{
+    padding-left: 2%;
+}

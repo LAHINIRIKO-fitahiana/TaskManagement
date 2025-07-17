@@ -1,0 +1,140 @@
+
+/* Styles pour le conteneur */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* Améliorations du champ de sélection */
+.division-selection {
+    margin-bottom: 15px;
+    text-align: left; /* Centrer le contenu */
+}
+
+/* Améliorations du champ de sélection */
+.form-select {
+    width: 210px; /* Largeur ajustée */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #0056b3; /* Bordure */
+    border-radius: 8px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+    font-family: 'Times New Roman', Times, serif; /* Ajout de la police */
+    background-color: #ffffff; /* Couleur de fond */
+    color: #333333; /* Couleur gris foncé pour le texte */
+    transition: border-color 0.3s; /* Transition de couleur de bordure */
+    appearance: none; /* Supprimer l'apparence par défaut */
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath fill="%230056b3" d="M10 12l-6-6h12z"/%3E%3C/svg%3E'); /* Flèche vers le bas */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Positionner la flèche */
+    background-size: 12px; /* Taille de la flèche */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.filter-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.form-select:hover {
+    border-color: #007bff; /* Changement de couleur au survol */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Ombre au survol */
+}
+
+.form-select:focus {
+    outline: none; /* Enlève le contour par défaut */
+    border-color: #007bff; /* Couleur de bordure au focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombre lors du focus */
+}
+
+/* Styles pour le titre */
+h2 {
+    font-family: "Imprint MT Shadow";
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le tableau */
+.table {
+    color: #000000;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead {
+    background-color: #92c4b5;
+    color: #ffffff;
+}
+
+.table thead th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Styles pour les lignes du tableau */
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.table tbody tr:hover {
+    background-color: #e2e6ea; /* Couleur de fond au survol */
+}
+
+/* Limiter la taille des cellules et afficher les "..." */
+td.title, td.description{
+    max-width: 120px;  /* Limiter la largeur de la cellule */
+    white-space: nowrap;  /* Empêcher le texte de passer à la ligne */
+    overflow: hidden;  /* Masquer tout texte excédentaire */
+    text-overflow: ellipsis;  /* Afficher "..." à la fin si le texte est trop long */
+}
+
+/* Styles pour la pagination */
+.pagination {
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px; /* Espacement entre les boutons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Styles généraux pour les appareils mobiles */
+@media (max-width: 768px) {
+    .table {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .form-select {
+        width: 100%; /* Prendre toute la largeur sur mobile */
+    }
+}
